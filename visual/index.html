@@ -5,7 +5,27 @@
     </head>
     <body>
         <h1>Hi Commander</h1>
+        <label>Password :</label>
+        <input id="password" type="password" placeholder="비밀번호 적으세요." autocomplete="off">
+        <br><br>
 
-        <!-- TODO -->
+        <form id="command-form">
+            <label>Command :</label>
+            <select name="select">
+                <option value=""></option>
+                <option value="message">Message</option>
+                <option value="kill">Kill</option>
+                <option value="kick">Kick</option>
+                <option value="ban">Ban</option>
+                <option value="unban">Unban</option>
+            </select>
+            <br>
+            <label>Text :</label>
+            <input name="text" type="text" placeholder="텍스트" autocomplete="off">
+            <button name="submit">Submit</button>
+        </form>
+
+        <p id="message"></p>
+        <script src="/scripts/index.js"></script>
     </body>
 </html>
